@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Statistics Clinic</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Andrew Connell" />
+    <script src="index_files/header-attrs-2.20/header-attrs.js"></script>
+    <script src="index_files/xaringanExtra-progressBar-0.0.1/progress-bar.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Statistics Clinic
+]
+.subtitle[
+## Tools for Research
+]
+.author[
+### Andrew Connell
+]
+.date[
+### 09 March, 2023
+]
+
+---
+
+
+<style>.xe__progress-bar__container {
+  bottom:0;
+  opacity: 1;
+  position:absolute;
+  right:0;
+  left: 0;
+}
+.xe__progress-bar {
+  height: 0.25em;
+  background-color: #035AA6;
+  width: calc(var(--slide-current) / var(--slide-total) * 100%);
+}
+.remark-visible .xe__progress-bar {
+  animation: xe__progress-bar__wipe 200ms forwards;
+  animation-timing-function: cubic-bezier(.86,0,.07,1);
+}
+@keyframes xe__progress-bar__wipe {
+  0% { width: calc(var(--slide-previous) / var(--slide-total) * 100%); }
+  100% { width: calc(var(--slide-current) / var(--slide-total) * 100%); }
+}</style>
+
+&lt;!-- edit name1 and name2 in the YAML above --&gt;
+
+# Why should I care?
+
+&lt;br /&gt;
+&lt;br /&gt;
+--
+
+* Good research practice means easier project.
+
+--
+
+* Honestly, research is hard if you don't have a plan. 
+
+--
+
+* These tools save you times.
+
+--
+
+* Your supervisors will be able to add and adapt more easily.
+
+--
+
+* Because they are fun!
+---
+
+# Integrated Development Environment (IDEs)
+
+&lt;br /&gt;
+--
+
+The main choices are:
+
+--
+
+* **RStudio**
+
+--
+
+* **Jupyter Notebooks**
+
+--
+
+* **Spyder**
+
+--
+
+* **MATLAB**
+
+--
+
+* **Visual Studio Code**
+
+--
+
+There are others (Emacs, Atom, XCode). The choice is your own!
+
+---
+
+# RStudio
+
+--
+
+![RStudio](figs/r.png)
+
+---
+
+# Jupyter 
+
+--
+
+![Jupyter](figs/jupyter.png)
+
+---
+
+# Spyder
+
+--
+
+![Spyder](figs/spyder.png)
+---
+
+# MATLAB
+
+--
+
+![MATLAB](figs/matlab.png)
+
+---
+
+# Mathematical Software
+
+--
+
+&lt;br/&gt;
+
+The most useful mathematical software to be aware of is
+
+--
+
+* **Wolfram Mathematica** - Imperial has a free educational license!
+
+--
+
+* **R/MATLAB/Python** - Your supervisor will expect you to use one of the three of them.
+
+--
+
+* **Maple** - Symbolic and numeric computing environment that some of you may want.
+
+--
+
+* **LEAN** - computational proof solving (it can be a bit difficult to learn!).
+
+---
+
+# Reference Managers
+
+--
+
+You should use a reference manager but the choice of which is completely up to you! The common ones are:
+
+--
+
+* **Zotero** - Collect, organise, and cite references in various formats. Automatically generate bibliographies and citations in different styles.
+
+--
+
+* **Mendeley** - Store, organise, and annotate PDFs, as well as share references with other researchers. It also includes a social networking feature that allows users to connect with other researchers in their field.
+
+--
+
+* **EndNote** - Web-based site and a mobile app for on-the-go access.
+
+--
+
+* **RefWorks** - A simple reference manager with minimal bloatware.
+
+--
+
+* **Citavi**
+
+--
+
+* **Papers**
+
+---
+
+# Bourne-Again SHell (BASH)
+
+--
+
+&lt;br/&gt;
+
+Bash, is a command-line interface (CLI) that is widely used in Unix-based operating systems.
+
+--
+Bash provides a powerful set of commands and features for interacting with the operating system and performing various tasks, such as:
+
+--
+
+* Navigating the file system.
+
+--
+
+* Managing processes.
+
+--
+
+* Executing programs.
+
+--
+
+* Write scripts to automate tasks.
+
+---
+
+# Navigating the file system
+
+&lt;br/&gt;
+
+--
+
+To list the contents of a directory, use the 'ls' command.
+
+
+```bash
+ls 
+```
+
+&lt;br/&gt;
+
+--
+
+To change to a different directory, use the 'cd' command:
+
+
+```bash
+cd /path/to/directory
+```
+
+&lt;br/&gt;
+
+--
+
+To go up one directory, use 'cd ..' command.
+
+
+```bash
+cd ..
+```
+
+---
+
+# Managing Processes
+
+&lt;br/&gt;
+
+--
+
+To see a list of running processes, use the 'ps' command.
+
+
+```bash
+ps
+```
+
+--
+
+&lt;br/&gt;
+
+To kill a process, use the 'kill' command.
+
+
+```bash
+kill PID
+```
+
+Replace "PID" with the process ID of the process you want to kill.
+
+---
+
+# Executing Programs
+
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+
+--
+
+To execute a program, simply type the name of the program.
+
+
+```bash
+program_name
+```
+
+---
+
+# Writing Scripts
+
+--
+
+To create a new script file, use the 'touch' command.
+
+
+```bash
+touch my_script.sh
+```
+
+--
+
+To edit the script file, use a text editor such as 'nano'.
+
+
+```bash
+nano my_script.sh
+```
+
+--
+
+In the text editor, you can write your script using Bash commands and syntax. For example:
+
+
+```bash
+#!/bin/bash
+echo "Hello, world!"
+```
+
+---
+
+# Writing Scripts (Cont.)
+
+&lt;br/&gt;
+
+--
+
+To execute the script, make it executable using the "chmod" command.
+
+
+```bash
+chmod +x my_script.sh
+```
+
+--
+
+&lt;br/&gt;
+
+Then, run the script:
+
+
+```bash
+./my_script.sh
+```
+
+--
+
+To execute multiple:
+
+
+```bash
+./script1.sh &amp; ./script2.sh &amp;
+```
+
+---
+
+# The Servers
+
+&lt;br/&gt;
+&lt;br/&gt;
+
+--
+
+To SSH into the shell:
+
+
+```bash
+ssh username@server_ip_address
+```
+
+--
+
+&lt;br/&gt;
+
+To copy files:
+
+
+```bash
+scp -r username@server_ip_address:path/to/folder /path/to/local/folder
+```
+---
+class: center, middle
+
+# Questions
+
+Please ask questions or submit them at [menti.com](https://www.menti.com/alt3tyaqfpoa) using code **2147 9825**
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%/%total%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<style type="text/css">.countdown {
+  background: transparent;
+  position: absolute;
+  cursor: pointer;
+  font-size: 2em;
+  line-height: 1.2;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+code.countdown-time {
+  vertical-align: middle;
+}
+
+.countdown-digits {
+  color: #eaeaea;
+}
+
+.countdown.running {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.countdown.running .countdown-digits {
+  color: grey;
+}
+
+.countdown.finished {
+  border-color: #CC0033;
+  background-color: #5F6A72;
+}
+
+.countdown.finished .countdown-digits {
+  color: #CC0033;
+}
+
+.countdown.running.warning {
+  border-color: #CFAE24;
+  background-color: #E6C229;
+}
+
+.countdown.running.warning .countdown-digits {
+  color: #39300A;
+}
+
+@-webkit-keyframes blink {
+  from {opacity: 1}
+  50% {opacity: 0.1}
+  to {opacity: 1}
+}
+
+@keyframes blink {
+  from {opacity: 1}
+  50% {opacity: 0.1}
+  to {opacity: 1}
+}
+
+.countdown.running.blink-colon .countdown-digits.colon {
+  -webkit-animation: blink 2s steps(1, end) 0s infinite;
+  animation: blink 2s steps(1, end) 0s infinite;
+}
+
+</style>
+
+
+<script>var counters = {timer: {}};
+var update_timer = function(timer, force = false) {
+	var secs = timer.value;
+
+	// check if we should update timer or not
+	noup = timer.div.className.match(/noupdate-\d+/);
+	if (!force && noup != null) {
+	  noup = parseInt(noup[0].match(/\d+$/));
+	  if (secs > noup * 2 && secs % noup > 0) { return; }
+	}
+
+	// should we apply or remove warning class?
+	warnwhen = timer.div.dataset.warnwhen;
+	if (warnwhen && warnwhen > 0) {
+	  if (secs <= warnwhen && !timer.div.classList.contains("warning")) {
+	    timer.div.classList.add("warning");
+	  } else if (secs > warnwhen && timer.div.classList.contains("warning")) {
+	    timer.div.classList.remove("warning");
+	  }
+	}
+
+  var mins = Math.floor(secs / 60); // 1 min = 60 secs
+  secs -= mins * 60;
+
+  // Update HTML
+  timer.min.innerHTML = String(mins).padStart(2, 0);
+  timer.sec.innerHTML = String(secs).padStart(2, 0);
+}
+var countdown = function (e) {
+  target = e.target;
+  if (target.classList.contains("countdown-digits")) {
+    target = target.parentElement;
+  }
+  if (target.tagName == "CODE") {
+    target = target.parentElement;
+  }
+
+  // Init counter
+  if (!counters.timer.hasOwnProperty(target.id)) {
+    counters.timer[target.id] = {};
+    // Set the containers
+	  counters.timer[target.id].min = target.getElementsByClassName("minutes")[0];
+  	counters.timer[target.id].sec = target.getElementsByClassName("seconds")[0];
+  	counters.timer[target.id].div = target;
+  }
+
+  if (!counters.timer[target.id].running) {
+    if (!counters.timer[target.id].end) {
+      counters.timer[target.id].end   = parseInt(counters.timer[target.id].min.innerHTML) * 60;
+		  counters.timer[target.id].end  += parseInt(counters.timer[target.id].sec.innerHTML);
+    }
+
+    counters.timer[target.id].value = counters.timer[target.id].end;
+    update_timer(counters.timer[target.id]);
+    if (counters.ticker) counters.timer[target.id].value += 1;
+
+    // Start if not past end date
+    if (counters.timer[target.id].value > 0) {
+      base_class = target.className.replace(/\s?(running|finished)/, "")
+      target.className = base_class + " running";
+      counters.timer[target.id].running = true;
+
+      if (!counters.ticker) {
+        counters.ticker = setInterval(counter_update_all, 1000);
+      }
+    }
+  } else {
+    // Bump timer value if running & clicked
+    counters.timer[target.id].value += counter_bump_increment(counters.timer[target.id].end);
+    update_timer(counters.timer[target.id], force = true);
+    counters.timer[target.id].value += 1;
+  }
+};
+
+var counter_bump_increment = function(val) {
+  if (val <= 30) {
+    return 5;
+  } else if (val <= 300) {
+    return 15;
+  } else if (val <= 3000) {
+    return 30;
+  } else {
+    return 60;
+  }
+}
+
+var counter_update_all = function() {
+  // Iterate over all running timers
+  for (var i in counters.timer) {
+    // Stop if passed end time
+    console.log(counters.timer[i].id)
+    counters.timer[i].value--;
+    if (counters.timer[i].value <= 0) {
+      counters.timer[i].min.innerHTML = "00";
+      counters.timer[i].sec.innerHTML = "00";
+      counters.timer[i].div.className = counters.timer[i].div.className.replace("running", "finished");
+      counters.timer[i].running = false;
+    } else {
+      // Update
+      update_timer(counters.timer[i]);
+
+      // Play countdown sound if data-audio=true on container div
+      if (counters.timer[i].div.dataset.audio && counters.timer[i].value == 5) {
+        counter_play_sound();
+      }
+    }
+  }
+
+  // If no more running timers, then clear ticker
+  var timerIsRunning = false;
+  for (var t in counters.timer) {
+    timerIsRunning = timerIsRunning || counters.timer[t].running
+  }
+  if (!timerIsRunning) {
+    clearInterval(counters.ticker);
+    counters.ticker = null;
+  }
+}
+
+var counter_play_sound = function() {
+  try {
+    var finished_sound = new Audio('libs/countdown/smb_stage_clear.mp3');
+    finished_sound.play();
+  } catch (e) {
+    try {
+      var finished_sound = new Audio('smb_stage_clear.mp3');
+      finished_sound.play();
+    } catch (e) {
+      console.log("Unable to locate sound file smb_stage_clear.mp3.")
+    }
+  }
+}
+
+var counter_addEventListener = function() {
+  if (!document.getElementsByClassName("countdown").length) {
+    setTimeout(counter_addEventListener, 2);
+    return;
+  }
+  var counter_divs = document.getElementsByClassName("countdown");
+  console.log(counter_divs);
+  for (var i = 0; i < counter_divs.length; i++) {
+    counter_divs[i].addEventListener("click", countdown, false);
+  }
+};
+
+counter_addEventListener();
+</script>
+
+<div class="countdown" id="timer_5ddeaad6" style="bottom:0;z-index:100" data-warnwhen="0"><code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
